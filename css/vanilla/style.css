@@ -1,0 +1,501 @@
+/* universal declaration */
+*{
+    box-sizing: border-box;
+}
+/* body */
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(9, 11, 31);
+}
+
+/* universal class */
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.margin-top-5{
+    margin-top: 5%;
+}
+.padding-top{
+    padding-top: 12px;
+}
+.color-white{
+    color: white !important;
+}
+.padding-2{
+    padding: 2%;
+}
+.img{
+    box-shadow: #121111 2px 12px 20px;
+    border: 1px solid #ffffffc2;
+    max-height: 600px;
+}
+
+.img:hover, .button input:hover {
+    opacity: 80%;
+    transition: all 0.3s ease !important;
+}
+/* header container */
+.header{
+     padding: 34px 70px;
+    /* padding: 2%; */
+   
+}
+/* header top navigation container*/
+.header .Top-nav{
+    margin: 34px 0px;
+}
+/* text container for top navigation  */
+.Text-nav{
+    width: 90%;
+     
+} 
+/* section for login */
+.Text-nav .User-mode, .Blogger-login{
+    padding: 3px;
+    font-style: italic;
+    letter-spacing: 15%;
+    line-height: 10px;
+    font-size: 16px;
+} 
+/* container for day/night switcher */
+.switcher{
+    display: flex;
+    width: 10%;
+    margin-top: -5px;
+    padding-left: 30px;
+   
+}
+/* day/night switcher */
+.switcher .circle{
+    width: 65px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 0 auto;
+    transition: 0.5s ease-in-out;
+
+} 
+.black{
+    background-color:  black !important;
+}
+.white{
+    background-color:  white !important;
+}
+.gray{
+    background-color: grey;
+}
+
+.Text-nav h3{
+    font-weight: 600;
+    font-size: medium;
+    letter-spacing:2px;
+    font-size: small;
+}
+.Top-text{
+    padding: 20px;
+}
+/* The header text container */
+.Hero-text-container{
+    position: relative;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+}
+.filter-bar{
+    position: absolute;
+    top: 10%;
+    left: -4%;
+}
+.filter-bar .description-name{
+    margin-left: 50%;
+    
+}
+.description-name span{
+    font-weight: 300;
+    font-size: small;
+    margin: 8% 1%;
+    /* color: rgb(150, 86, 210); */
+    color: white;
+    opacity: 0.4;
+}
+.filter{
+    position: absolute;
+    background-color: white;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+.filter span{
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: small;
+    padding: 5px 0px;
+    border: 1px solid rgb(9, 11, 31);
+    color: black;
+}
+
+.radius-bottom{
+    border-radius: 0px 0px 15px 15px;
+}
+.active{
+    font-size: medium !important;
+    background-color: rgb(9, 11, 31);
+    color: white !important;
+    box-shadow: 0px 5px 5px black;
+    
+}
+.default{
+    background-color: rgb(9, 11, 31);
+    color: white !important;
+    box-shadow: 4px 5px 12px black;
+   
+    
+}
+.selected{
+   opacity: 1 !important;
+   font-weight: 500 !important;
+}
+.Hero-text-container .Hero-text {
+    text-align: center;
+  
+}
+
+.Hero-text h1{
+     font-size: 200px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    
+    
+}
+/* main section of the page */
+.Main-section{
+    margin:20px 24px 0px;
+    
+}
+/* section header */
+.Main-section h4{
+    text-align: center;
+}
+/* Recent post container */
+
+.blog-post-card{
+    width: 50%;
+    margin-right: 2%;
+}
+
+.blog-post-card2{
+    width: 50%;
+    max-width: 700px;
+}
+.blog-post-card2 h2, .blog-post-card h2{
+    padding: 5px;
+    margin: 1%;
+}
+
+
+.text-desc{
+    padding: 10px;
+}
+.text-desc h2,.text-desc h2{
+font-size: 24px;
+letter-spacing: 5%;
+line-height: 60px;
+
+}
+.blog-post-card .text-desc h2{
+    font-size: 20px;
+}
+.blog-post-card2 .datetime-stamp,.blog-post-card .datetime-stamp{
+    padding: 5px;
+    padding-left: 2%;
+}
+.datetime-stamp h3{
+    font-size: 16px;
+    color: #c8c9d3;;
+    letter-spacing: 5%;
+    line-height: 60px;
+}
+.blog-post-card .datetime-stamp h3{
+    font-size: 11px;
+}
+
+.button{
+      padding: 1%;
+}
+.button input{
+    color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5%;
+    padding: 1% 5%;
+    box-shadow: 10px 6px 10px rgb(18, 18, 18);
+   
+}
+.blog-post-card .button input{
+    font-size: 11px;
+    color: black;
+    padding: 1% 3%;
+}
+
+.blog-post-card3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  
+   
+}
+.blog-post-card3 .img{
+    width: 60%;
+    max-width: 900px;
+    max-height: 700px;
+  
+}
+.blog-post-card3 img{
+    width: 100% !important;
+    border: 2px solid black;
+}
+
+.blog-post-card3 .text-description{
+    margin: 0 auto;
+    width: 40%;
+    padding: 3%;
+ }
+.text-description .description{
+    margin-top: 20%;
+}
+
+.datetime-stamp,  .blogpost-description{
+    padding: 10px;
+    
+}
+.description .button{
+    margin-bottom: 5% !important;
+}
+.blog-post-card3 .datetime-stamp h2{
+    letter-spacing: 5%;
+    font-size: 16px;
+}
+.blog-post-card3 h3{
+    font-size: 32px !important;
+    font-weight: bold;
+}
+.blog-post-card3 .button{
+ 
+    padding: 10px;
+}
+.blog-post-card3 .button button{
+    color: white;
+}
+
+.All-post h2{
+    text-align: center;
+    color: white;
+}
+
+.post{
+    padding: 0.3%;
+    margin: 1%;
+    width: 600px;
+}
+.post-container .blog-post-card{
+    width: 30% !important;
+}
+.blogpost-description h3{
+    font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 0.2%;
+}
+.post:hover{
+    transition: 1s;
+    box-shadow: 15px 15px 30px BLACK;
+    
+  
+}
+.post .img img{
+    height: 400px;
+    max-width: 600px;
+
+}
+.post .img img:hover{
+    border-radius: 10px;
+    opacity: 80%;
+    transition: 0.5s;
+}
+.post .img:hover{
+    transition: 0.5s !important;
+    border: 1.5px solid white !important;
+    border-radius: 10px !important;
+}
+.post .button input{
+    background-color:rgb(84, 69, 103);
+    font-weight: 400;
+    font-size: small;
+    padding: 8px 20px;
+    border: none;
+    font-weight: bold;
+    
+}
+.post .button input:hover{
+    opacity: 80%;
+}
+.first-post .button input{
+    background-color: white;
+    color: black;
+   
+}
+.second-post .button input{
+    background-color: rgb(114 118 213);
+    color: white;
+  
+}
+.post-2 .post-display{
+    width: 40%;
+    justify-content: normal;
+    height: fit-content;
+}
+
+.post-display.img{
+    width: 80%;
+}
+
+.post-2 .post-display2{
+    padding: 0.3%;
+    margin: 1%;
+    width: 60%;
+}
+/* .post-display .img,.text-desc{
+    width: 50%;
+} */
+.post-display2 .img,.text-desc{
+    width: 100%;
+}
+
+ .post-a{
+    width: 100%;
+} 
+ .post-b{
+    width: 100%;
+} 
+
+
+
+.catch-phrase-blog h2{
+    text-align: left;
+    font-size: 45px;
+}
+
+.catch-phrase-blog .desc{
+    padding: 3%;
+   
+}
+.catch-phrase-blog h2{
+    /* color: rgb(85, 70, 104); */
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+}
+button, input{
+     box-shadow: 10px 12px 20px black;
+}
+
+
+.catch-phrase-blog button{
+    background-color: rgb(85, 70, 104);
+    padding: 1%;
+    color: white;
+    margin: 2%;
+    box-shadow: 10px 12px 20px black;
+    border: none;
+}
+.catch-phrase-blog button:hover{
+    background-color: black;
+    border: 1px solid white;
+    transition: 1s;
+ 
+}
+.catch-phrase-blog .img{
+    max-height: 70%;
+
+}
+/* footer */
+.footer{
+    margin:20px 24px 0px;
+    border-top: 2px solid white;
+    min-height: 40px;
+}
+
+.Top-footer-nav{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav-numbers{
+    padding-top: 10px;
+}
+.numbers span{
+    margin: 0px 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.numbers #active{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding:8px 15px;
+}
+.previous, .next{
+    padding-top: 5px;
+    padding: 10px;
+}
+.previous img, .next img{
+    margin-top: -8px;
+    margin-left: -4px;
+}
+span{
+    color: white;
+    font-weight: 600;
+}    
+/* links */
+.links a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.links{
+    margin-left: 5%;
+}
+.links #Production{
+    color:white;
+}
+.links #Twitter{
+    color: rgb(71, 75, 181);
+}
+.links #Linkedin{
+    color: rgb(58, 61, 135);
+}
+.links #Email{
+    color: rgb(244, 154, 154);
+}
+.links #Rssfeed{
+    color: rgb(140, 65, 65);
+}
