@@ -47,7 +47,7 @@ const next = document.querySelector(".next")
 
 // Image paths for toggling
 const newDayImage = './assets/img/logo_assets/Untitled.png';
-const newNightImage = './assets/img/logo_assets/night.svg';
+const newNightImage = './assets/img/logo_assets/Night.svg';
 const originalDayImage = './assets/img/logo_assets/Ellipse 3.svg';
 const originalNightImage = './assets/img/logo_assets/Subtract.svg';
 // prev and next navigation arrow toggling
