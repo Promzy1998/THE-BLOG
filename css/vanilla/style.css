@@ -208,9 +208,12 @@ body{
 
 .text-desc{
     padding: 10px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
 }
 .text-desc h2,.text-desc h2{
-font-size: 24px;
+font-size: 20px;
 letter-spacing: 5%;
 line-height: 60px;
 
@@ -317,8 +320,9 @@ line-height: 60px;
     width: 30% !important;
 }
 .blogpost-description h3{
-    font-size: 20px;
-   font-weight: 400;
+    font-family: Roboto;
+    font-size: 18px;
+   font-weight: 300;
    letter-spacing: 0.2%;
 }
 .post:hover{
@@ -360,7 +364,7 @@ line-height: 60px;
    
 }
 .second-post .button input{
-    background-color: rgb(114 118 213);
+    background-color:rgb(127 129 181);
     color: white;
   
 }
@@ -385,14 +389,25 @@ line-height: 60px;
 .post-display2 .img,.text-desc{
     width: 100%;
 }
+.post-display .button input:hover{
+    color: white;
+}
 
  .post-a{
     width: 100%;
 } 
+.post-a .text-desc .blogpost-description h3, .post-b .text-desc .blogpost-description h3{
+    font-size: 20px;
+}
  .post-b{
     width: 100%;
 } 
-
+.post-a .button input:hover{
+    color: white;
+}
+.post-b .button input:hover{
+    color: white;
+}
 
 
 .catch-phrase-blog h2{
