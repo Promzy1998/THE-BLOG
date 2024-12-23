@@ -402,6 +402,14 @@ line-height: 60px;
  .post-b{
     width: 100%;
 } 
+.post-display .button input{
+    color: white;
+    opacity: 0.7;
+}
+.post-a .button input, .post-b .button input{
+    color: white;
+    opacity: 0.7;
+}
 .post-a .button input:hover{
     color: white;
 }
