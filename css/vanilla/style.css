@@ -372,11 +372,30 @@ line-height: 60px;
     width: 40%;
     justify-content: normal;
     height: fit-content;
+    height: 900px;
+   
+}
+.post-display img{
+    min-height: 590px;
 }
 
-.post-display.img{
-    width: 80%;
+.post-display .text-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
+.post-display .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  
+} 
+
+/* .post-display.img{
+    width: 80%;
+} */
 
 .post-2 .post-display2{
     padding: 0.3%;
