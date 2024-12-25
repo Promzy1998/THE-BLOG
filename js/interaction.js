@@ -14,13 +14,28 @@
         btnEl.addEventListener("click", () => {
             // Remove 'default', 'active', and 'selected' from all buttons and contents
             categories.forEach(({ button: btn, content: cnt }) => {
-                document.querySelector(btn).classList.remove("active", "default", "radius-bottom");
+                document.querySelector(btn).classList.remove("active", "default", "radius-bottom","radius-top");
                 document.querySelector(cnt).classList.remove("selected");
+               
             });
+            if (btnEl == Lifestyle){
+                btnEl.classList.add("radius-bottom");
+
+            }
+            else{
+                if(btnEl==Fashion){
+                btnEl.classList.add("radius-top");
+                }
+
+            }
+
+            
+                btnEl.classList.add("active");
+                contentEl.classList.add("selected");
+            
 
             // Add 'active' and 'selected' to the clicked button and corresponding content
-            btnEl.classList.add("active");
-            contentEl.classList.add("selected");
+          
         });
     });
 });
@@ -31,6 +46,7 @@ const filter_dot = document.querySelector('.filter')
 const Span_desc=desc.querySelectorAll("span")
 const filter_span=filter_dot.querySelectorAll("span")
 const Lifestyle=document.querySelector("#Lifestyle")
+const Fashion=document.querySelector("#Fashion")
 
 
 
