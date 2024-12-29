@@ -1,0 +1,234 @@
+@media (min-width:900px) and (max-width:1200px){
+    .Hero-text-container .Hero-text h1{
+        font-size: 110px;
+    }
+
+}
+
+@media (max-width:899px){
+    .header .Top-nav {
+        margin: 15px 0px;
+    }
+    .switcher {
+        margin-top: -5px;
+        padding-left: 5px;
+    }
+    .Hero-text {
+        margin-left: 10%;
+    }
+
+    .Hero-text-container .Hero-text h1{
+        font-size: 90px;
+    }
+    .filter-bar {
+        top: -10%;
+        left: -8%;
+    }
+    .description-name span {
+        font-size: 70%;
+    }
+    .text-desc {
+        padding: 4px;
+    }
+    .Main-section {
+        margin: 20px 10px 0px;
+    }
+    .post {
+        width: 100% !important;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .post-2 .post-display2 {
+        padding: 0.3%;
+        margin: 1%;
+        width: 100%;
+    }
+    .datetime-stamp, .blogpost-description {
+        padding: 3px;
+    }
+    .blog-post-card3 .datetime-stamp h2 {
+        font-size: 12px;
+    }
+    .post-a .text-desc .blogpost-description h3, .post-b .text-desc .blogpost-description h3 {
+        font-size: 13px;
+    }
+    .blog-post-card2 .datetime-stamp, .blog-post-card .datetime-stamp {
+        padding: 0px;
+        padding-left: 4%;
+    }
+    
+
+    .datetime-stamp h3 {
+        font-size: 11px;
+        color: white;
+    }
+    .post-2 .post-display {
+        height: 80%;
+    }
+
+    .post-display .img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .post-display img {
+        min-height: 450px;
+    }
+    .blogpost-description h3 {
+        font-size: 14px;
+    }
+    .catch-phrase-blog img{
+        height: 400px;
+
+    }
+    .catch-phrase-blog h2 {
+        font-size: 150%;
+    }
+    .catch-phrase-blog button {
+        font-size: small;
+    }
+    .blog-post-card3 h3 {
+        font-size: 120% !important;
+    }
+    .text-description .description {
+        margin-top: 5%;
+    }
+    .post-b, .post-a{
+        width: 100% !important;
+    }
+    .blog-post-card3 .button {
+        padding: 1px;
+    }
+    .button input {
+        font-size: 12px;
+    }
+}
+@media (min-width:500px) and (max-width:800px) {
+ 
+    .filter-bar {
+        top: -10%;
+        left: -10%
+    }
+    .description-name span {
+        font-size: 55%;
+        margin: 18% 1%;
+    }
+    
+}
+@media (min-width:599px) and (max-width:700px){
+    .Hero-text-container .Hero-text h1{
+        font-size: 70px !important;
+    }
+}
+@media (max-width:500px){
+    .Text-nav h3 {
+        font-weight: 400;
+        font-size: xx-small;
+      
+    }
+    .Hero-text-container .Hero-text h1{
+        font-size: 55px;
+        font-weight: 600;
+    }
+    .Hero-text {
+        margin-left: 15%;
+    }
+    .header {
+    padding: 10px 10px;
+    /* padding: 2%; */
+}
+.Text-nav {
+    width: 80%;
+    
+} 
+    .filter-bar {
+        top: -35%;
+        left: 0;
+       
+    }
+    .description-name span {
+        font-size: 49%;
+        margin: 22% 1%;
+    }
+    .Recent-post {
+    flex-direction: column;
+    justify-content: space-between;
+      }
+      .blog-post-card, .blog-post-card2{
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .blog-post-card3 {
+     
+        flex-direction: column;
+       
+    }
+    .blog-post-card3 .text-description, .blog-post-card3 .img{
+        width: 100%;
+    }
+    .text-desc h2, .text-desc h2 {
+        font-size: 15px;
+        padding-top: 5%;
+        line-height: 20px;
+    }
+    .post-container{
+        flex-direction: column;
+    }
+    .post{
+        width: 90% ;
+    }
+    .post-b, .post-a{
+       flex-direction: column;
+    }
+    .blog-post-card .text-desc h2 {
+        font-size: 12px;
+    }
+    .blog-post-card3 h3 {
+        font-size: 100% !important;
+    }
+}
+@media (max-width:400px){
+    .header .Top-nav {
+        margin: 15px 0px;
+    }
+    .Hero-text-container .Hero-text h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .Hero-text {
+        margin-left: 20%;
+    }
+
+    .filter-bar {
+     top: -53%;
+     left: 0;
+    }
+    .post-b, .post-a {
+        width: 90% !important;
+    }
+    .blogpost-description h3 {
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 399px) {
+    .filter-bar {
+        top: -20%;
+        left: 0;
+    }
+    .Hero-text h1{
+        font-size: 60px;
+    }
+}
+
+
+@media (min-width: 130px) and (max-width: 260px){
+.main{
+   width: 160%;
+   margin: 0 auto;
+}
+.Hero-text-container .Hero-text h1 {
+    font-size: 45px;
+    
+}
+}

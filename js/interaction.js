@@ -42,7 +42,7 @@
 
 // HTML structure
 const desc = document.querySelector('.description-name')
-const filter_dot = document.querySelector('.filter')
+const filter_dot = document.querySelector('.filter-bar')
 const Span_desc=desc.querySelectorAll("span")
 const filter_span=filter_dot.querySelectorAll("span")
 const Lifestyle=document.querySelector("#Lifestyle")
@@ -90,19 +90,23 @@ dayIcon.addEventListener('click', () => {
         // day light
         prev.querySelector("#prev").src=arrow_left
         next.querySelector("#next").src=arrow
+        filter_dot.classList.remove("Bg-Color-Night")
+        desc.classList.remove("Bg-Color-Night")
      
         
     } else {
         body.classList.add("gray")
-        body.style.transition="0.7s"
+        body.style.transition="0.9s"
         circle.classList.add('black')
         dayIcon.src = newNightImage;
         nightIcon.src = newDayImage;
         // night mode(white)
           prev.querySelector("#prev").src=arrow_white_left
           next.querySelector("#next").src=arrow_white
+         filter_dot.classList.add("Bg-Color-Night")
+          desc.classList.add("Bg-Color-Night")
        
-    }
+    } 
 });
 
 
