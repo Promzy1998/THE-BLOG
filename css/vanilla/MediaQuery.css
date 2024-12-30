@@ -75,7 +75,7 @@
         min-height: 450px;
     }
     .blogpost-description h3 {
-        font-size: 14px;
+        font-size: 17px;
     }
     .catch-phrase-blog img{
         height: 400px;
@@ -102,16 +102,52 @@
     .button input {
         font-size: 12px;
     }
+    .links a{
+        font-size: 12px;
+    }
 }
 @media (min-width:500px) and (max-width:800px) {
+    .header {
+        padding: 0px 10px;
+        padding-left: 15px;
+    }
+    .Text-nav h3 {
+     
+        font-size: x-small;
+    }
+    .Hero-text-container .Hero-text h1{
+        font-size: 75px !important;
+    }
  
     .filter-bar {
         top: -10%;
-        left: -10%
+        left: -1%
     }
     .description-name span {
         font-size: 55%;
         margin: 18% 1%;
+    }
+    .Recent-post{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .post-container{
+        flex-direction: column;
+    }
+    .first-post .img, .second-post .img, .third-post .img{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .blog-post-card,.blog-post-card2{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .blog-post-card3{
+        flex-direction: column;
+    }
+    .blog-post-card3 > div{
+        width: 100% !important;
     }
     
 }
@@ -121,6 +157,9 @@
     }
 }
 @media (max-width:500px){
+    .switcher {
+        width: 8%;
+     }
     .Text-nav h3 {
         font-weight: 400;
         font-size: xx-small;
@@ -154,6 +193,9 @@
     flex-direction: column;
     justify-content: space-between;
       }
+      .post-a .text-desc .blogpost-description h3, .post-b .text-desc .blogpost-description h3 {
+        font-size: 20px;
+    }
       .blog-post-card, .blog-post-card2{
         width: 100%;
         margin-top: 3%;
@@ -187,6 +229,33 @@
     .blog-post-card3 h3 {
         font-size: 100% !important;
     }
+    .catch-phrase-blog img {
+        height: 350px;
+    }
+    .catch-phrase-blog h2 {
+        font-size: 125%;
+    }
+    .nav-numbers {
+        padding-top: 8px;
+    }
+    .numbers #active {
+        border-radius: 3px;
+        color: black;
+        padding: 2px 5px;
+    }
+    .numbers span {
+        margin: 0px 7px;
+        font-size: 12px;
+    }
+    .previous, .next {
+         padding: 8px;
+    }
+    .next span{
+        font-size: small;
+    }
+    .previous span{
+        font-size: small;
+    }
 }
 @media (max-width:400px){
     .header .Top-nav {
@@ -209,6 +278,12 @@
     }
     .blogpost-description h3 {
         font-size: 16px !important;
+    }
+    .previous span, .next span{
+        display: none;
+    }
+    .numbers span {
+        font-size: 10px;
     }
 }
 @media (max-width: 399px) {
