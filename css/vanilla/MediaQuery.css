@@ -1,8 +1,95 @@
+
+
+
+@media (min-width:800px) and (max-width:960px) {
+    .main{
+        width: 115%;
+        margin-left: 3%;
+    }
+    
+    .header{
+        padding: 34px  2px 5px 70px;
+        /* margin-right: -18%; */
+    }
+    .filter-bar {
+        top: -9% !important;
+        left: 0% !important;
+    }
+    .switcher{
+        left: 80% !important;
+        top: 5% !important;
+    }
+    .Hero-text {
+        margin-left: 5% !important;
+    }
+    .Main-section{
+        width: 100%;
+    }
+    /* .first-blog-post{
+        /* margin-right: -23% !important; */
+ 
+    .post-display .text-desc{
+        margin-left: 0% !important;
+    }
+   
+}
+@media (min-width:960px) {
+   
+    .blogpost-description h3 {
+     font-size: 110%;
+    
+    }
+    .post-display h3{
+        font-size: 120%;
+    }
+    
+}
 @media (min-width:900px) and (max-width:1200px){
     .Hero-text-container .Hero-text h1{
         font-size: 110px;
     }
 
+}
+@media (min-width: 700px) and (max-width:1000px) {
+    .Hero-text-container .Hero-text h1{
+        font-size: 110px !important;
+    }
+    
+}
+
+
+@media (width >800px) and (width<960px) {
+    .text-description .description {
+        margin-top: 70% !important;
+    }
+    .post-container{
+        flex-direction: column;
+
+    }
+    .post-container > div{
+        width: 100%;
+    }
+    .post-container  .text-desc{
+        margin: 0 auto;
+        margin-left: 18%;
+        
+    }
+    .first-post .img,.second-post .img, .third-post .img{
+        margin: 0 auto;
+    }
+    
+    .first-post{
+        width: 90% !important;
+        margin:  0 auto !important;
+    }
+    .post .img{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .post-display .img {
+        width: 65% !important;
+        margin: 0 auto !important;
+    }
 }
 
 @media (max-width:899px){
@@ -12,7 +99,10 @@
     .switcher {
         margin-top: -5px;
         padding-left: 5px;
+        left: 85%;
+        top: 2%;
     }
+    
     .Hero-text {
         margin-left: 10%;
     }
@@ -26,13 +116,24 @@
     }
     .description-name span {
         font-size: 70%;
+        margin: 12% 1%;
     }
     .text-desc {
         padding: 4px;
     }
-    .Main-section {
-        margin: 20px 10px 0px;
+    .text-desc h2, .text-desc h2 {
+        font-size: 17px;
+        line-height: 20px;
     }
+    .Main-section {
+     
+        padding: 1%;
+       
+          }
+          
+    /* .first-blog-post{
+        margin-right: -5%;
+    } */
     .post {
         width: 100% !important;
         margin: 0 auto;
@@ -60,7 +161,7 @@
     
 
     .datetime-stamp h3 {
-        font-size: 11px;
+        font-size: 12px;
         color: white;
     }
     .post-2 .post-display {
@@ -107,6 +208,9 @@
     }
 }
 @media (min-width:500px) and (max-width:800px) {
+    .main{
+        width: 100%;
+    }
     .header {
         padding: 0px 10px;
         padding-left: 15px;
@@ -115,12 +219,16 @@
      
         font-size: x-small;
     }
+    .header .Top-nav {
+         margin: 34px;
+    }
+        
     .Hero-text-container .Hero-text h1{
         font-size: 75px !important;
     }
  
     .filter-bar {
-        top: -10%;
+        top: -6%;
         left: -1%
     }
     .description-name span {
@@ -135,9 +243,18 @@
     .post-container{
         flex-direction: column;
     }
+    .post-display2 .post{
+        width: 100% !important;
+    }
+    .post{ 
+        width: 90% !important;
+    }
     .first-post .img, .second-post .img, .third-post .img{
         width: fit-content;
         margin: 0 auto;
+    }
+    .post-a .text-desc .blogpost-description h3, .post-b .text-desc .blogpost-description h3 {
+        font-size: 18px;
     }
     .blog-post-card,.blog-post-card2{
         width: 100%;
@@ -146,19 +263,58 @@
     .blog-post-card3{
         flex-direction: column;
     }
+    .blog-post-card3 .img {
+         max-height: fit-content;
+        width: fit-content;
+    }
+    .blog-post-card3 img{
+        max-height: 700px;
+       
+    }
     .blog-post-card3 > div{
         width: 100% !important;
     }
-    
-}
-@media (min-width:599px) and (max-width:700px){
-    .Hero-text-container .Hero-text h1{
-        font-size: 70px !important;
+    .post-display .text-desc,.post-display .datetime-stamp,.post-display .button{
+        padding-left: 2% !important;
     }
+    .post-display .blogpost-description{
+        padding-left: 2%;
+    }
+    .text-desc, .datetime-stamp, .button{
+        padding-left: 3% !important;
+    }
+    .text-desc h2{
+        font-size: 17px;
+        line-height: 55px;
+    }
+    .blog-post-card2 h2, .blog-post-card h2 {
+        padding: 0;
+        margin: 0;
+    }
+    .blogpost-description {
+        padding: 3px;
+        padding-left: 3%;
+    }
+   
+    .post .img img {
+        max-width: 700px;
+        
+    }
+}
+@media (min-width:599px) and (max-width:799px){
+    .Hero-text-container .Hero-text h1{
+        font-size: 90px !important;
+    }
+        .blogpost-description h3 {
+        font-size: 20px;
+    }
+
 }
 @media (max-width:500px){
     .switcher {
         width: 8%;
+        top: 1%;
+        left: 85%;
      }
     .Text-nav h3 {
         font-weight: 400;
@@ -194,7 +350,7 @@
     justify-content: space-between;
       }
       .post-a .text-desc .blogpost-description h3, .post-b .text-desc .blogpost-description h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
       .blog-post-card, .blog-post-card2{
         width: 100%;
@@ -270,7 +426,7 @@
     }
 
     .filter-bar {
-     top: -53%;
+     top: -35%;
      left: 0;
     }
     .post-b, .post-a {
