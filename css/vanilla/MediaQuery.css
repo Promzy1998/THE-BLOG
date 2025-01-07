@@ -3,34 +3,47 @@
 
 @media (min-width:800px) and (max-width:960px) {
     .main{
-        width: 115%;
-        margin-left: 3%;
+        width: 100%;
+        /* margin-left: 10%; */
     }
     
     .header{
         padding: 34px  2px 5px 70px;
         /* margin-right: -18%; */
     }
+    .Text-nav{
+        width: 90%;
+    }
     .filter-bar {
         top: -9% !important;
         left: 0% !important;
     }
     .switcher{
-        left: 80% !important;
-        top: 5% !important;
+        left: 85% !important;
+        top: 4% !important;
     }
-    .Hero-text {
+    /* .Hero-text {
         margin-left: 5% !important;
-    }
+    } */
     .Main-section{
         width: 100%;
     }
-    /* .first-blog-post{
-        /* margin-right: -23% !important; */
- 
+    .blog-post-card3 .img {
+        width: 100%;
+    }
+    .blog-post-card3 .text-description {
+        width: 50%;
+    }
+    .first-blog-post{
+       width: 90%;
+    }
     .post-display .text-desc{
         margin-left: 0% !important;
     }
+    .catch-phrase-blog{
+        width: 110% !important;
+        
+    }    
    
 }
 @media (min-width:960px) {
@@ -44,30 +57,92 @@
     }
     
 }
+@media (min-width:1770px) {
+    .main{
+        width: 90%;
+        margin:  0 auto;
+
+    }
+    .Main-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .Text-nav h3{
+        font-size: x-large;
+    }
+    .switcher{
+        top: 5%;
+    }
+    
+}
 @media (min-width:900px) and (max-width:1200px){
     .Hero-text-container .Hero-text h1{
         font-size: 110px;
     }
+    .first-post .blogpost-description h3, .second-post h3,.third-post .blogpost-description h3{
+        font-size: 80% !important;
+    }
+    .datetime-stamp h3 {
+        font-size: 12px;
+    }
+  
+    /* .Hero-text {
+        margin-left: 5% !important;
+    } */
 
+}
+@media (min-width:900px) and (max-width:955px){
+    .catch-phrase-blog{
+        width: 115%;
+      
+    }    
 }
 @media (min-width: 700px) and (max-width:1000px) {
     .Hero-text-container .Hero-text h1{
         font-size: 110px !important;
     }
+   
     
 }
 
 
-@media (width >800px) and (width<960px) {
+@media (width >800px) and (width<962px) {
     .text-description .description {
         margin-top: 70% !important;
     }
     .post-container{
         flex-direction: column;
+        flex-wrap: wrap;
 
     }
-    .post-container > div{
+    .post-a .img img, .post-b .img img{
         width: 100%;
+    }
+    .post-a .img, .post-b .img{
+        width: 60% !important;
+    }
+    .post-a .text-desc,.post-b .text-desc{
+        width: 50%;
+        margin-left: 5% !important;
+    }
+    .post-a .blogpost-description,.post-b .blogpost-description{
+        width: 100% !important;
+    }
+    .post-a h3, .post-b h3{
+        font-size: 110% !important;
+    }
+    .post-2 .post-display {
+        width: 100%;
+    }
+    .post-display .text-desc{
+        margin-left: 4% !important;
+    }
+    .post-container .blogpost-description {
+        padding: 10px;
+        width: 70%;
+    }
+    .post-container > div{
+        width: 100% !important;
     }
     .post-container  .text-desc{
         margin: 0 auto;
@@ -79,7 +154,7 @@
     }
     
     .first-post{
-        width: 90% !important;
+        width: 100% !important;
         margin:  0 auto !important;
     }
     .post .img{
@@ -146,7 +221,7 @@
         width: 100%;
     }
     .datetime-stamp, .blogpost-description {
-        padding: 3px;
+        padding: 5px;
     }
     .blog-post-card3 .datetime-stamp h2 {
         font-size: 12px;
@@ -178,6 +253,7 @@
     .blogpost-description h3 {
         font-size: 17px;
     }
+   
     .catch-phrase-blog img{
         height: 400px;
 
@@ -221,6 +297,10 @@
     }
     .header .Top-nav {
          margin: 34px;
+    }
+    .switcher{
+        left: 85% !important;
+        top: 4% !important;
     }
         
     .Hero-text-container .Hero-text h1{
