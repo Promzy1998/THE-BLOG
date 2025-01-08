@@ -47,6 +47,10 @@ const Span_desc=desc.querySelectorAll("span")
 const filter_span=filter_dot.querySelectorAll("span")
 const Lifestyle=document.querySelector("#Lifestyle")
 const Fashion=document.querySelector("#Fashion")
+// footer nav
+const links=document.querySelector(".links")
+const production=document.querySelector('#Production')
+
 
 
 
@@ -92,6 +96,8 @@ dayIcon.addEventListener('click', () => {
         next.querySelector("#next").src=arrow
         filter_dot.classList.remove("Bg-Color-Night")
         desc.classList.remove("Bg-Color-Night")
+        links.classList.remove("bg-white") 
+        production.classList.remove("text-black")     
      
         
     } else {
@@ -103,8 +109,11 @@ dayIcon.addEventListener('click', () => {
         // night mode(white)
           prev.querySelector("#prev").src=arrow_white_left
           next.querySelector("#next").src=arrow_white
-         filter_dot.classList.add("Bg-Color-Night")
+          filter_dot.classList.add("Bg-Color-Night")
           desc.classList.add("Bg-Color-Night")
+          links.classList.add("bg-white")
+          production.classList.add("text-black")   
+          production.classList.add("p-2")   
        
     } 
 });

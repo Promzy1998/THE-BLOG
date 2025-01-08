@@ -98,6 +98,9 @@ body{
 .white{
     background-color:  white !important;
 }
+.text-black{
+    color: black !important;
+}
 .gray{
     background-color: grey;
 }

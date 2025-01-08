@@ -19,7 +19,7 @@
         left: 0% !important;
     }
     .switcher{
-        left: 85% !important;
+        left: 83% !important;
         top: 4% !important;
     }
     /* .Hero-text {
@@ -55,7 +55,9 @@
     .post-display h3{
         font-size: 120%;
     }
-    
+    .first-post .blogpost-description h3, .second-post h3,.third-post .blogpost-description h3{
+        font-size: 100% !important;
+    }
 }
 @media (min-width:1770px) {
     .main{
@@ -67,6 +69,7 @@
         width: 90%;
         margin: 0 auto;
     }
+   
     .Text-nav h3{
         font-size: x-large;
     }
@@ -76,11 +79,15 @@
     
 }
 @media (min-width:900px) and (max-width:1200px){
+    /* .switcher{
+        top: -10%;
+        padding: 3%;
+    } */
     .Hero-text-container .Hero-text h1{
         font-size: 110px;
     }
     .first-post .blogpost-description h3, .second-post h3,.third-post .blogpost-description h3{
-        font-size: 80% !important;
+        font-size: 120% ;
     }
     .datetime-stamp h3 {
         font-size: 12px;
