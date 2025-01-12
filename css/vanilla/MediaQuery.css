@@ -36,10 +36,7 @@
 }
 /* Tab View Responsiveness */
 @media (min-width:900px) and (max-width:1200px){
-    /* .switcher{
-        top: -10%;
-        padding: 3%;
-    } */
+   
     .Hero-text-container .Hero-text h1{
         font-size: 110px;
     }
@@ -49,11 +46,7 @@
     .datetime-stamp h3 {
         font-size: 12px;
     }
-  
-    /* .Hero-text {
-        margin-left: 5% !important;
-    } */
-
+      
 }
 @media (min-width:900px) and (max-width:955px){
     .catch-phrase-blog{

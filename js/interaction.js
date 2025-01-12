@@ -16,26 +16,18 @@
             categories.forEach(({ button: btn, content: cnt }) => {
                 document.querySelector(btn).classList.remove("active", "default", "radius-bottom","radius-top");
                 document.querySelector(cnt).classList.remove("selected");
-               
-            });
+             });
             if (btnEl == Lifestyle){
                 btnEl.classList.add("radius-bottom");
-
             }
             else{
                 if(btnEl==Fashion){
                 btnEl.classList.add("radius-top");
                 }
-
             }
-
-            
                 btnEl.classList.add("active");
                 contentEl.classList.add("selected");
-            
-
-            // Add 'active' and 'selected' to the clicked button and corresponding content
-          
+                               
         });
     });
 });
@@ -85,7 +77,6 @@ dayIcon.addEventListener('click', () => {
     isDay = !isDay;
 
     if (isDay) {
-   
         // Day mode styles
         circle.classList.remove('black')
         body.classList.remove("gray")
