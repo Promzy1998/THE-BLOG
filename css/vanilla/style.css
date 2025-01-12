@@ -29,6 +29,24 @@ body{
 .padding-top{
     padding-top: 12px;
 }
+.black{
+    background-color:  black !important;
+}
+.white{
+    background-color:  white !important;
+}
+.text-black{
+    color: black !important;
+}
+.gray{
+    background-color: grey;
+}
+.Bg-Color-Day{
+    background-color: rgb(9, 11, 31);
+}    
+.Bg-Color-Night{
+    background-color: grey
+}    
 .color-white{
     color: white !important;
 }
@@ -44,6 +62,9 @@ body{
 .img:hover, .button input:hover {
     opacity: 80%;
     transition: all 0.3s ease !important;
+}
+.button{
+    padding: 1%;
 }
 /* header container */
 .header{
@@ -92,18 +113,7 @@ body{
     transition: 0.5s ease-in-out;
 
 } 
-.black{
-    background-color:  black !important;
-}
-.white{
-    background-color:  white !important;
-}
-.text-black{
-    color: black !important;
-}
-.gray{
-    background-color: grey;
-}
+
 
 .Text-nav h3{
     font-weight: 600;
@@ -125,18 +135,12 @@ body{
     position: absolute;
     top: 10%;
     left: -4%;
-   
-}
+   }
 .filter-bar .description-name{
     margin-left: 50%;
    
     }
-.Bg-Color-Day{
-    background-color: rgb(9, 11, 31);
-}    
-.Bg-Color-Night{
-    background-color: grey
-}    
+
 .description-name span{
     font-weight: 300;
     font-size: small;
@@ -261,9 +265,7 @@ line-height: 60px;
     font-size: 11px;
 }
 
-.button{
-      padding: 1%;
-}
+
 .button input{
     color: black;
     border-radius: 20px;
