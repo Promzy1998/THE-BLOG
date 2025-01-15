@@ -3,7 +3,9 @@
 
 /* Desktop View or Computer View Responsiveness */
 @media (min-width:960px) {
-   
+    .author-mode-text{
+        font-size: 90% !important;
+    }
     .blogpost-description h3 {
      font-size: 110%;
     
@@ -303,7 +305,7 @@
     }
         
     .Hero-text-container .Hero-text h1{
-        font-size: 75px !important;
+        font-size: 60px !important;
     }
  
     .filter-bar {
@@ -343,7 +345,7 @@
         flex-direction: column;
     }
     .blog-post-card3 .img {
-         max-height: fit-content;
+        max-height: fit-content;
         width: fit-content;
     }
     .blog-post-card3 img{
@@ -416,7 +418,7 @@
     
 } 
     .filter-bar {
-        top: -35%;
+        top: -10%;
         left: 0;
        
     }
@@ -524,7 +526,7 @@
 }
 @media (max-width: 399px) {
     .filter-bar {
-        top: -20%;
+        top: -25%;
         left: 0;
     }
     .Hero-text h1{

@@ -203,7 +203,7 @@ body{
 }
 
 .Hero-text h1{
-     font-size: 200px;
+     font-size: 180px;
     letter-spacing: 3px;
     font-weight: bolder;
     z-index: 2;
@@ -266,6 +266,7 @@ line-height: 60px;
 }
 
 
+
 .button input{
     color: black;
     border-radius: 20px;
@@ -276,6 +277,41 @@ line-height: 60px;
     box-shadow: 10px 6px 10px rgb(18, 18, 18);
    
 }
+.author-tools{
+    display: none;
+    background-color: gray; 
+    position:absolute;
+    width:100%; 
+    opacity:0.8;
+}
+.author-tools button{
+    border-radius: 10px;
+    font-size: 80%;
+}
+.author-tools button:hover{
+   font-size: 100%;
+   background-color: black;
+   color: white;
+   transition: 0.8s;
+}
+.blog-post-card, .blog-post-card2,.blog-post-card3{
+    position: relative;
+}
+.blog-post-card .author-tools{
+    top:5%; 
+}
+.blog-post-card2 .author-tools{
+    top:20%; 
+}
+.blog-post-card3 .author-tools{
+    top:25%; 
+    width: 60% !important;
+}
+.blog-post-card3:hover .author-tools, .blog-post-card2:hover .author-tools, .blog-post-card:hover .author-tools{
+    transition: 0.3s;
+    display: block;
+}
+
 .blog-post-card .button input{
     font-size: 11px;
     color: black;
@@ -343,6 +379,7 @@ line-height: 60px;
     padding: 0.3%;
     margin: 1%;
     width: 600px;
+    
 }
 .post-container .blog-post-card{
     width: 30% !important;
@@ -374,6 +411,31 @@ line-height: 60px;
     border: 1.5px solid white !important;
     border-radius: 10px !important;
 }
+.first-post:hover .author-tools, .second-post:hover .author-tools, .third-post:hover .author-tools{
+    transition: 0.3s;
+    display: block;
+}
+.first-post, .second-post, .third-post{
+    position: relative;
+}
+.first-post .author-tools, .second-post .author-tools, .third-post .author-tools {
+    /* position: relative; */
+    top: 20%;
+ 
+ }
+ .post-a, .post-b, .post-display{
+    position: relative;
+ }
+ .post-a:hover .author-tools, .post-b:hover .author-tools{
+    width: 50%;
+ }
+
+.post-a:hover .author-tools, .post-b:hover .author-tools, .post-display:hover .author-tools{
+    transition: 0.3s;
+    display: block;
+    top: 20%;
+   
+}  
 .post .button input{
     background-color:rgb(84, 69, 103);
     font-weight: 400;
@@ -464,7 +526,14 @@ line-height: 60px;
     color: white;
 }
 
-
+.catch-phrase-blog{
+    position: relative;
+}
+.catch-phrase-blog:hover .author-tools{
+    display: block;
+    transition: 0.3s;
+    top:20%
+}
 .catch-phrase-blog h2{
     text-align: left;
     font-size: 45px;
