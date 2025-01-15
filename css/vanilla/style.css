@@ -289,23 +289,24 @@ line-height: 60px;
     font-size: 80%;
 }
 .author-tools button:hover{
-   font-size: 100%;
+   font-size: 80%;
    background-color: black;
    color: white;
-   transition: 0.8s;
+   transition: 0.5s;
+   font-weight: 600;
 }
 .blog-post-card, .blog-post-card2,.blog-post-card3{
     position: relative;
 }
 .blog-post-card .author-tools{
-    top:5%; 
+    top:3%; 
 }
 .blog-post-card2 .author-tools{
     top:20%; 
 }
 .blog-post-card3 .author-tools{
     top:25%; 
-    width: 60% !important;
+    width: 60%;
 }
 .blog-post-card3:hover .author-tools, .blog-post-card2:hover .author-tools, .blog-post-card:hover .author-tools{
     transition: 0.3s;

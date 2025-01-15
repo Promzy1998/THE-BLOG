@@ -118,6 +118,16 @@
         flex-wrap: wrap;
 
     }
+    .Hero-text-container .Hero-text h1{
+        font-size: 70px !important;
+    }
+    .blog-post-card3 .author-tools {
+        width: 65% !important;
+    }
+    .author-tools {
+        font-size: 75%;
+       
+    }
     .post-a .img img, .post-b .img img{
         width: 100%;
     }
@@ -167,6 +177,17 @@
     .post-display .img {
         width: 65% !important;
         margin: 0 auto !important;
+    }
+
+    .catch-phrase-blog:hover .author-tools{
+        top: 5%;
+        margin-left: -0.5% !important;
+        margin-left: 1%;
+       
+    }
+    .author-tools button{
+        font-size: 90% !important;
+
     }
 }
 
@@ -294,7 +315,7 @@
     }
     .Text-nav h3 {
      
-        font-size: x-small;
+        font-size: small;
     }
     .header .Top-nav {
          margin: 34px;
@@ -304,10 +325,7 @@
         top: 4% !important;
     }
         
-    .Hero-text-container .Hero-text h1{
-        font-size: 60px !important;
-    }
- 
+    
     .filter-bar {
         top: -6%;
         left: -1%
@@ -355,6 +373,13 @@
     .blog-post-card3 > div{
         width: 100% !important;
     }
+    .Hero-text-container .Hero-text h1{
+        font-size: 60px !important;
+    }
+   
+    .blog-post-card3 .author-tools {
+        width: 100% !important;
+    }
     .post-display .text-desc,.post-display .datetime-stamp,.post-display .button{
         padding-left: 2% !important;
     }
@@ -380,6 +405,18 @@
     .post .img img {
         max-width: 700px;
         
+    }
+    .post-a .author-tools button, .post-b .author-tools button{
+        font-size: 70%;
+
+
+    }
+    .catch-phrase-blog button{
+        font-size: 70%;
+    }
+    .catch-phrase-blog button:hover {
+        font-size:  80%;
+        transition: 0.1s;
     }
 }
 @media (min-width:599px) and (max-width:799px){
@@ -443,6 +480,13 @@
         flex-direction: column;
        
     }
+    .author-tools {
+        top: 15% !important;
+        width: 100% !important;
+    }
+    .author-tools button{
+        font-size: 75%;
+    }
     .blog-post-card3 .text-description, .blog-post-card3 .img{
         width: 100%;
     }
@@ -471,6 +515,13 @@
     }
     .catch-phrase-blog h2 {
         font-size: 125%;
+    }
+    .catch-phrase-blog .author-tools button{
+        padding: 1.5%;
+    }
+    .catch-phrase-blog .author-tools button:hover{
+        transition: 0.1s;
+        font-size: 75%;
     }
     .nav-numbers {
         padding-top: 8px;
