@@ -614,6 +614,10 @@ span{
     font-weight: 600;
 }    
 /* links */
+a{
+    color: white;
+    text-decoration: none;
+}
 .links a{
     text-decoration: none;
     font-size: 15px;
