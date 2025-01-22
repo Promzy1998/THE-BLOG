@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:rgb(9, 11, 31);
+}
+
+.account-body{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5%;
+    background-color:rgb(79 79 93);
+    border-radius: 20px;
+    border: 2px solid rgb(207, 199, 199);
+    padding: 1%;
+    box-shadow: 2px 4px 8px black;
+}
+.account{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.transition-body{
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(92%);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgb(66 77 151 / 37%);
+    transition: 1s ease-in-out;
+  }
+.transition-body:hover{
+    box-shadow: 0 8px 32px rgb(40 57 173 / 37%);
+}
+.Login_container{
+width: 50%;
+padding: 2%;
+position: relative;
+z-index: 3;
+transition: 1s ease-in-out;
+}
+.Signup_container{
+    width: 50%;
+    /* background-color: brown; */
+    padding: 3%;
+    position: relative;
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+}
+.Signup,.Login{
+    margin-top: 25%;
+    position: static;
+}
+.translateleft{
+    transition: 0.3s;
+    transform: translateX(0%);
+}
+.translateright{
+    transition: 0.3s;
+    transform: translateX(93%);
+}
+.transition{
+    transition: transform 0.5s ease
+}
+
+.Signup_container .Sig{
+    margin-top: 40% !important;
+       display: block;
+}
+.Sig,.Log{
+    margin-top: 20%;
+    box-shadow: 2px 4px 6px black;
+    margin-left: 14%;
+    width: 70%;
+    background: white
+}
+
+
+.dblock{
+    display: none !important;
+}
+.dnone{
+    display: none !important;
+}
+
+
+input{
+    border-radius: 3px;
+    padding: 2%;
+    width: 100%;
+    opacity: 0.8;
+    color: black;
+ }
+ input::placeholder{
+    color: black;
+    font-style: oblique;
+    opacity: 0.6;
+    font-size: 90%;
+ }
+
+
+button{
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 120%;
+    border-radius: 5px;
+    padding: 1%;
+}
+button:hover{
+    background: black;
+    color: white;
+}
+
+/* media for smaller screens */
+@media (min-width:900px)  and (max-width:1200px){
+    .translateright{
+        transform: translateX(90%);
+    }
+    .account_btn{
+        font-size: 100% !important;
+    }
+    
+}
+@media (min-width:601px) {
+    .Signup_container .Log, .Login_container .Sig{
+        display: none !important;
+    }
+    
+     .Login_container .acct{
+        display: none !important;
+    } 
+    
+    .Login_container .Sig{
+        display: none !important;
+    }
+    .button{
+        display: none;
+    }
+    /* .Login_container .button{
+        display: none !important;
+    } */
+}
+
+@media (max-width:899px) {
+    .translateright{
+        transform: translateX(90%);
+    }
+    input{
+        font-size: 80% !important;
+    } 
+    input::placeholder{
+        font-size: 70% !important;
+    }
+
+    .account_btn{
+        font-size:95% !important;
+    }
+    .Signup button, .Login button{
+        font-size: 90%;
+
+    }
+}
+
+@media (max-width:600px) {
+    .account_btn{
+        font-size:80% !important;
+    }
+    .Signup_container{
+        display: none;
+    }
+    .Login_container{
+        width: 100%;
+    }
+    .translateleft, .translateright{
+        transition: none;
+    }
+    .Login_container .acct{
+        display: none !important;
+    } 
+   
+    .transition-body{
+        width: 75vw;
+        transform: translateX(0);
+        
+    }
+    input{
+        font-size: 100%;
+    }
+    .Signup button, .Login button{
+        font-size: 100%;
+        color: white;
+
+    }
+    .Sig{
+        width: 65%;
+        margin-top: 0;
+        color: black !important;
+    }
+    .Sig:hover{
+        color: white !important;
+    }
+    .Log{
+        color: black !important;
+    }
+    .transition{
+        display: block !important;
+        margin-top: 2%;
+    }
+    .Log-Config-Mediaquery{
+       display: none !important;
+    }
+    .Sig-Config-Mediaquery{
+       width: 80vw; 
+       display: block !important;
+    }
+   
+}
