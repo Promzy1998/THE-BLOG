@@ -22,11 +22,18 @@
 
                 <input type="email" name="email" id="email" placeholder="EMAIL"><br><br>
 
-                <input type="text" name="" id="name" placeholder="PHONE NO"><br><br>
-                <input type="password" name="password" placeholder="PASSWORD"><br><br>
-
-                <input type="password" name="password" id="password" placeholder="CONFIRM PASSWORD"><br><br>
-                <button type="button">SignUp</button>
+                <input type="text" name="" id="name" placeholder="PHONE NO">
+               <br><br>
+                <input type="password" name="password" placeholder="PASSWORD" id="password">
+                <span class="toggle-password" id="toggler">👁️</span>
+                <br><br>
+                  
+                <input type="password" name="confirmpassword" placeholder="CONFIRM PASSWORD" id="confirmpassword">
+                <span class="toggle-password" id="confirmtoggler">👁️</span>
+               <br><br>
+                <button type="button" id="btn">SignUp</button><br><br>
+                <span id="strength"></span> 
+                <span id="modal_password"></span>  
             </form>
             <button class="Log  dblock account_btn">Login As Author</button>
             <button class="Sig account_btn">SignUp For An Account</button>

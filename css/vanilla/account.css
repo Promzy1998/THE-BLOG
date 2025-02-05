@@ -116,6 +116,29 @@ button:hover{
     background: black;
     color: white;
 }
+#strength, #modal_password{
+    display: none;
+    color: #a52222;
+    background: white;
+    padding: 2%;
+    left: 45%;
+    opacity: 0.6;
+}
+/* .toggle-password {
+    position: absolute;
+    right: 10%;
+    top: 53%;
+    transform: translateY(-50%);
+    cursor: pointer;
+} */
+
+.toggle-password{
+    position: fixed;
+    margin-left: -3%;
+    margin-top: .5%;
+    cursor: pointer;
+    display: none;
+}
 
 /* media for smaller screens */
 @media (min-width:900px)  and (max-width:1200px){

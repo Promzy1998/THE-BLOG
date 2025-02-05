@@ -50,8 +50,91 @@
      })
  })
 
-Log.addEventListener("click",()=>{
+document.addEventListener("DOMContentLoaded",()=>{
+    let password=document.getElementById("password");
+    let cpassword=document.getElementById("confirmpassword");
+    let modal_password=document.getElementById("modal_password");
+    let strengthText=document.getElementById("strength")
+    let eyeToggler=document.getElementById('toggler')
+    let confirmToggler=document.getElementById('confirmtoggler')
+    let button=document.getElementById("btn")
+    password.addEventListener("input", checkStrength)
+    cpassword.addEventListener("input", checkMatch)
+    eyeToggler.addEventListener("click", () => togglePassword("password",eyeToggler));
+    confirmToggler.addEventListener("click", () => togglePassword("confirmpassword",confirmToggler));
+    button.addEventListener("click",()=>{
+        let passwordValue=password.value
+        let cpasswordValue=cpassword.value
+        if (cpasswordValue.trim() === "") {
+            modal_password.innerHTML = "⚠️ Please confirm your password!";
+            modal_password.style.color = "orange";
+            return;
+        }
+        if (passwordValue === cpasswordValue) {
+            modal_password.style.color = "green";
+            modal_password.innerHTML = "✅ Passwords match!";
+        } else {
+            modal_password.style.color = "red";
+            modal_password.innerHTML = "❌ Passwords do not match!";
+        }
+    })
+    // Check Password Strength
+    function checkStrength() {
+        eyeToggler.style.display="inline"
+        strengthText.style.display='inline'
+        let passwordV = password.value;
+        let strength = 0;
+        if (passwordV.length >= 8) strength++;
+        if (/[A-Z]/.test(passwordV)) strength++;
+        if (/[a-z]/.test(passwordV)) strength++;
+        if (/[0-9]/.test(passwordV)) strength++;
+        if (/[@$!%*?&]/.test(passwordV)) strength++;
+
+        let strengthLevels = ["Weak ❌", "Moderate ⚠️", "Strong ✅"];
+
+        if (strength <= 2) {
+            strengthText.style.color = "red";
+            strengthText.innerHTML = `Strength: ${strengthLevels[0]}`;
+        } else if (strength <= 4) {
+            strengthText.style.color = "orange";
+            strengthText.innerHTML = `Strength: ${strengthLevels[1]}`;
+        } else {
+            strengthText.style.color = "green";
+            strengthText.innerHTML = `Strength: ${strengthLevels[2]}`;
+        }
+    }
+    function checkMatch(){
+        confirmToggler.style.display="inline"
+        modal_password.style.display='inline'
+        let passwordValue=password.value
+        let cpasswordValue=cpassword.value
+        if (cpasswordValue.trim() === "") {
+            modal_password.innerHTML = "⚠️ Please confirm your password!";
+            modal_password.style.color = "orange";
+            return;
+        }
+        else if (passwordValue === cpasswordValue) {
+            modal_password.style.color = "green";
+            modal_password.innerHTML = "✅ Passwords match!";
+        } else {
+            modal_password.style.color = "red";
+            modal_password.innerHTML = "❌ Passwords do not match!";
+        }
+    }
+    opacity=true
+    function togglePassword(id,toggle) {
+        let passwordInput = document.getElementById(id);
+        opacity=!opacity
+        if (passwordInput) {
+            if(opacity){
+                toggle.style.opacity=1
+             }
+            else{
+                toggle.style.opacity=0.2 
+            }
+              passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+        }
+    }
 
 })
-
   
